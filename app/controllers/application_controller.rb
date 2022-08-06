@@ -22,4 +22,9 @@ class ApplicationController < Sinatra::Base
     show.to_json
   end
 
+  ##post '/users' do
+   ## show = Show.create(params)
+   ## show.to_json
+ ## end
+
 end
