@@ -33,8 +33,8 @@ class ApplicationController < Sinatra::Base
     post_show.to_json
   end
 
-  post '/user' do 
-    post_user = User.create(params)
+  post '/users' do 
+    post_user = User.where(params[:name])
     post_user.to_json
   end
 
